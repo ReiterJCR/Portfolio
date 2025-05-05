@@ -27,11 +27,11 @@ const About: NextPage = () => {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12 mb-20">
               <div className="lg:w-1/2">
                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                  <span className="text-blue-400">Hi, I'm Joel.</span> Nice to meet you!
+                  <span className="text-blue-400">Hi, Im Joel.</span> Nice to meet you!
                 </h1>
                 <div className="text-navy-300 text-lg space-y-4">
                   <p>
-                    I'm a passionate software engineer who loves turning complex problems into elegant solutions.
+                    Im a passionate software engineer who loves turning complex problems into elegant solutions.
                   </p>
                   
                 </div>
@@ -79,10 +79,10 @@ const About: NextPage = () => {
                   <span className="text-blue-400 mr-3">✈️</span> My Journey
                 </h3>
                 <p className="text-navy-300">
-                  I first started coding in high school, fascinated by how a few lines of text could create something interactive. When I chose Computer Science at Appalachian State, it wasn't just because I enjoyed programming - I saw how computers could solve real-world problems in ways that excited me.
+                  I first started coding in high school, fascinated by how a few lines of text could create something interactive. When I chose Computer Science at Appalachian State, it wasnt just because I enjoyed programming - I saw how computers could solve real-world problems in ways that excited me.
                 </p>
                 <p className="text-navy-300">
-                  That practical problem-solving mindset still drives me today. Whether it's building responsive web applications or optimizing backend systems, I love seeing how code translates into tangible solutions.
+                  That practical problem-solving mindset still drives me today. Whether its building responsive web applications or optimizing backend systems, I love seeing how code translates into tangible solutions.
                 </p>
               </div>
               
