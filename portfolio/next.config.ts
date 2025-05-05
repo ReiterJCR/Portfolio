@@ -1,8 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactStrictMode: true,
-};
-
-export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    output: 'standalone', // Enable standalone output for Docker
+    images: {
+      unoptimized: true, // Disable image optimization for App Runner
+    },
+  };
+  
+  module.exports = nextConfig;
