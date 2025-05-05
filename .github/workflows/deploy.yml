@@ -38,4 +38,4 @@ jobs:
 
       - name: Deploy to AWS App Runner
         run: |
-          aws apprunner start-deployment --service-arn $(aws apprunner list-services --region ${{ secrets.AWS_REGION }} --query 'ServiceSummaryList[?ServiceName==`my-portfolio`].ServiceArn' --output text)
+          aws apprunner start-deployment --service-arn $(aws apprunner list-services --region ${{ secrets.AWS_REGION }} --query 'ServiceSummaryList[?ServiceName==`joelreiter-portfolio`].ServiceArn' --output text)
