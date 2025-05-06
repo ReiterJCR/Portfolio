@@ -161,7 +161,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className="flex flex-col md:flex-row justify-between items-center">
             {/* Copyright */}
             <div className="mb-4 md:mb-0">
-              <p>&copy; {new Date().getFullYear()} Joel Reiter. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Joel Reiter.</p>
             </div>
             
             {/* Social Links */}

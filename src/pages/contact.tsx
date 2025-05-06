@@ -22,10 +22,10 @@ const Contact: NextPage = () => {
             {/* Email Button */}
             <div className="mb-16">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:jreiter2001@gmail.com"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300"
               >
-                Send Me an Email
+                Send Me an Email - jreiter2001@gmail.com
               </a>
             </div>
             
@@ -43,7 +43,7 @@ const Contact: NextPage = () => {
                 </svg>
               </Link>
               <Link 
-                href="https://github.com/yourusername" 
+                href="https://github.com/ReiterJCR" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-navy-200 hover:text-blue-400 transition-colors duration-300"

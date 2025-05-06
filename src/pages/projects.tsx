@@ -6,24 +6,23 @@ import Head from 'next/head';
 const Projects: NextPage = () => {
   const projects = [
     {
-      title: "Project 1",
-      description: "A brief description of your project. Add details about the tech stack or features.",
-      tags: ["React", "TypeScript", "Next.js"],
+      title: "RTDrones",
+      description: "A website for a drone business.",
+      tags: ["React", "TypeScript", "Next.js", "Docker", "Google Cloud Platform"],
+      link: "https://rtdrones-618637881969.us-central1.run.app/"
+    },
+    {
+      title: "Probablistic Reference Values Streamlit App",
+      description: "A python app to help scientists analyze data.",
+      tags: ["Python", "Streamlit" , "Docker", "Digital Ocean"],
       link: "#"
     },
     {
-      title: "Project 2",
-      description: "Another project description. Customize this with your own work.",
-      tags: ["Node.js", "Express", "MongoDB"],
+      title: "MixrBot",
+      description: "A React Native app to accomodate a drink mixing machine.",
+      tags: ["React Native", "AWS"],
       link: "#"
     },
-    {
-      title: "Project 3",
-      description: "Describe another project here. Link to a live demo or GitHub if available.",
-      tags: ["Python", "Django", "PostgreSQL"],
-      link: "#"
-    },
-    // Add more projects as needed
   ];
 
   return (

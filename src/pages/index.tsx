@@ -1,9 +1,18 @@
+import { useRef } from 'react';
 import Layout from '../../components/Layout';
 import Link from 'next/link';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
 const Home: NextPage = () => {
+  const skillsSectionRef = useRef<HTMLDivElement>(null);
+
+  const scrollToSkills = () => {
+    skillsSectionRef.current?.scrollIntoView({ 
+      behavior: 'smooth' 
+    });
+  };
+
   return (
     <>
       <Head>
@@ -13,7 +22,7 @@ const Home: NextPage = () => {
       
       <Layout>
         {/* Hero Section */}
-        <section className="min-h-screen flex flex-col justify-center items-center bg-navy-900 text-white px-6 py-20">
+        <section className="min-h-screen flex flex-col justify-center items-center bg-navy-900 text-white px-6 py-20 relative">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
               Joel Reiter
@@ -40,12 +49,16 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          {/* Scroll indicator */}
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+          {/* Scroll indicator - now clickable */}
+          <button 
+            onClick={scrollToSkills}
+            className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce focus:outline-none"
+            aria-label="Scroll to skills section"
+          >
             <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
-          </div>
+          </button>
         </section>
 
         {/* Featured Skills Section */}
@@ -55,14 +68,24 @@ const Home: NextPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Web Development",
+                  title: "Frontend Development",
                   description: "Building responsive, accessible web applications with modern frameworks.",
                   icon: "💻"
                 },
                 {
-                  title: "System Design",
-                  description: "Architecting scalable and maintainable software systems.",
-                  icon: "🧩"
+                  title: "Backend Development",
+                  description: "Creating APIs and microservices to power applications.",
+                  icon: "⚙️"
+                },
+                {
+                  title: "Cloud Solutions",
+                  description: "Leveraging cloud technologies for scalable and efficient solutions.",
+                  icon: "☁️"
+                },
+                {
+                  title: "Data Analysis",
+                  description: "Transforming data into actionable insights through analysis and visualization.",
+                  icon: "📊"
                 },
                 {
                   title: "Problem Solving",
