@@ -21,7 +21,6 @@ const Home: NextPage = () => {
       </Head>
       
       <Layout>
-        {/* Hero Section */}
         <section className="min-h-screen flex flex-col justify-center items-center bg-navy-900 text-white px-6 py-20 relative">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
@@ -49,7 +48,6 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          {/* Scroll indicator - now clickable */}
           <button 
             onClick={scrollToSkills}
             className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce focus:outline-none"

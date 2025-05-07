@@ -34,14 +34,14 @@ export default function Layout({ children }: LayoutProps) {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-navy-900 relative">
+    <div className="min-h-screen flex flex-col bg-navy-900 w-full overflow-x-hidden">
       {/* Header */}
       <header className="bg-navy-800 shadow-lg sticky top-0 z-40">
-        <nav className="container mx-auto px-4 sm:px-6 py-3"> {/* Adjusted py for better logo sizing */}
+        <nav className="container mx-auto px-4 sm:px-6 py-3">
           <div className="flex items-center justify-between">
             {/* Logo/Name - Left side */}
             <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200">
-              <div className="relative h-15 w-15"> {/* Adjust size as needed */}
+              <div className="relative h-15 w-15">
                 <Image
                   src="/images/jrlogo.png"
                   alt="Joel Reiter Logo"

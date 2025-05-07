@@ -19,7 +19,7 @@ const About: NextPage = () => {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12 mb-20">
               <div className="lg:w-1/2">
                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                  <span className="text-blue-400">Hi, Im Joel.</span> Nice to meet you!
+                  <span className="text-blue-400">Hi, I'm Joel.</span> Nice to meet you!
                 </h1>
                 <div className="text-navy-300 text-lg space-y-4">
                   <p>

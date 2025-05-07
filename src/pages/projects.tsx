@@ -6,6 +6,12 @@ import Head from 'next/head';
 const Projects: NextPage = () => {
   const projects = [
     {
+        title: "Portfolio",
+        description: "This website was built from scratch using React and Next.js. I deployed it using Docker and AWS App Runner.",
+        tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "AWS"],
+        link: "https://joelreiter.com"
+    },
+    {
       title: "RTDrones",
       description: "A website for a drone business.",
       tags: ["React", "TypeScript", "Next.js", "Docker", "Google Cloud Platform"],
