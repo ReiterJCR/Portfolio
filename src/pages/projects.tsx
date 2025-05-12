@@ -21,7 +21,6 @@ const Projects: NextPage = () => {
       title: "Probablistic Reference Values Streamlit App",
       description: "A python app to help scientists analyze data.",
       tags: ["Python", "Streamlit" , "Docker", "Digital Ocean"],
-      link: "#"
     },
   ];
 
@@ -60,13 +59,15 @@ const Projects: NextPage = () => {
                         </span>
                       ))}
                     </div>
+                    {project.link && (
+                        <Link
+                           href={project.link}
+                           className="inline-block w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-300"
+                        >
+                            View Project
+                        </Link>
+                    )}
                     
-                    <Link
-                      href={project.link}
-                      className="inline-block w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-300"
-                    >
-                      View Project
-                    </Link>
                   </div>
                 </div>
               ))}
