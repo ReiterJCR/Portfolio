@@ -134,7 +134,7 @@ export default function Layout({ children }: LayoutProps) {
                 </svg>
               </Link>
               <Link 
-                href="https://github.com/yourusername" 
+                href="https://github.com/ReiterJCR" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-navy-200 hover:text-blue-400 transition-colors duration-300"

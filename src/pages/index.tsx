@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       </Head>
       
       <Layout>
-        <section className="min-h-screen flex flex-col justify-center items-center bg-navy-900 text-white px-6 py-20 relative">
+        <section className="min-h-screen flex flex-col justify-center items-center bg-navy-900 text-white px-6 py-16 relative">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
               Joel Reiter

@@ -7,26 +7,20 @@ const Projects: NextPage = () => {
   const projects = [
     {
         title: "Portfolio",
-        description: "This website was built from scratch using React and Next.js. I deployed it using Docker and AWS App Runner.",
+        description: "This website was built using React and Next.js. Deployed on Vercel.",
         tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "AWS"],
-        link: "https://joelreiter.com"
+        link: "https://joelreiter.vercel.app/projects"
     },
     {
       title: "RTDrones",
-      description: "A website for a drone business.",
-      tags: ["React", "TypeScript", "Next.js", "Docker", "Google Cloud Platform"],
-      link: "https://rtdrones-618637881969.us-central1.run.app/"
+      description: "A mock website for a drone business. Built with Next.js and Supabase. Deployed on Vercel.",
+      tags: ["React", "TypeScript", "Next.js", "Vercel", "Supabase"],
+      link: "https://rt-drones.vercel.app/"
     },
     {
       title: "Probablistic Reference Values Streamlit App",
       description: "A python app to help scientists analyze data.",
       tags: ["Python", "Streamlit" , "Docker", "Digital Ocean"],
-      link: "#"
-    },
-    {
-      title: "MixrBot",
-      description: "A React Native app to accomodate a drink mixing machine.",
-      tags: ["React Native", "AWS"],
       link: "#"
     },
   ];
