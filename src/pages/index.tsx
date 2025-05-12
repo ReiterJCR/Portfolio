@@ -28,7 +28,7 @@ const scrollToSkills = () => {
               Joel Reiter
             </h1>
             <h2 className="text-xl md:text-2xl text-navy-200 mb-8 animate-fade-in delay-100">
-              Software Engineer & Problem Solver
+              Software Engineer
             </h2>
             <p className="text-lg md:text-xl text-navy-300 mb-12 max-w-2xl mx-auto animate-fade-in delay-200">
               I create efficient solutions to complex problems.
