@@ -9,7 +9,7 @@ const Projects: NextPage = () => {
         title: "Portfolio",
         description: "This website was built using React and Next.js. Deployed on Vercel.",
         tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "AWS"],
-        link: "https://joelreiter.vercel.app/projects"
+        link: "https://joelreiter.com/"
     },
     {
       title: "RTDrones",
