@@ -23,7 +23,7 @@ const About: NextPage = () => {
                 </h1>
                 <div className="text-navy-300 text-lg space-y-4">
                   <p>
-                    I'm a software engineer who loves to find unique solutions to complex problems. 
+                    I'm a 24 year old software engineer who loves to find unique solutions to complex problems. I am motivated to bring my skills to the table and work with others to create something amazing. I have a passion for learning new things and am always looking for new challenges to tackle.
                   </p>
                   
                 </div>

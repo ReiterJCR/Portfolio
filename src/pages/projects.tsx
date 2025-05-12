@@ -8,19 +8,20 @@ const Projects: NextPage = () => {
     {
         title: "Portfolio",
         description: "This website was built using React and Next.js. Deployed on Vercel.",
-        tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "AWS"],
+        tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel", "Personal"],
         link: "https://joelreiter.com/"
     },
     {
       title: "RTDrones",
       description: "A mock website for a drone business. Built with Next.js and Supabase. Deployed on Vercel.",
-      tags: ["React", "TypeScript", "Next.js", "Vercel", "Supabase"],
+      tags: ["React", "TypeScript", "Next.js", "Vercel", "Supabase", "Personal"],
       link: "https://rt-drones.vercel.app/"
     },
     {
-      title: "Probablistic Reference Values Streamlit App",
-      description: "A python app to help scientists analyze data.",
-      tags: ["Python", "Streamlit" , "Docker", "Digital Ocean"],
+      title: "HERO",
+      description: "Health and Environmental Research Online (HERO) is a database of scientific studies and other references used to develop EPA's risk assessments aimed at understanding the health and environmental effects of pollutants and chemicals.",
+      tags: ["Python", "Django", "PostgreSQL", "CSS", "HTML", "JavaScript", "Agile Development", "Jira", "Team"],
+      link:"https://heronetnext.epa.gov/"
     },
   ];
 
