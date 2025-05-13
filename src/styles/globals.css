@@ -119,3 +119,30 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes orbit1 {
+  from {
+    transform: rotate(0deg) translateX(1000px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(1000px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit2 {
+  from {
+    transform: rotate(120deg) translateX(1000px) rotate(-120deg);
+  }
+  to {
+    transform: rotate(480deg) translateX(1000px) rotate(-480deg);
+  }
+}
+
+@keyframes orbit3 {
+  from {
+    transform: rotate(240deg) translateX(1000px) rotate(-240deg);
+  }
+  to {
+    transform: rotate(600deg) translateX(1000px) rotate(-600deg);
+  }
+}

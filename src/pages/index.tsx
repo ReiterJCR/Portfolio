@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import StarField from '../../components/StarField';
 
 const Home: NextPage = () => {
   const skillsSectionRef = useRef<HTMLDivElement>(null);
@@ -32,7 +33,9 @@ const Home: NextPage = () => {
       
       <Layout>
         <section className="min-h-screen flex flex-col justify-center items-center bg-navy-900 text-white px-6 py-16 relative">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center">        
+            <StarField />
+
             <h1 className="text-4xl text-blue-400 md:text-6xl font-bold mb-6 animate-fade-in">
               Joel Reiter
             </h1>
