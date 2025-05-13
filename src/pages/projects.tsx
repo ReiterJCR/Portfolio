@@ -37,7 +37,7 @@ const Projects: NextPage = () => {
           <div className="container mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-4">Projects</h2>
             <p className="text-navy-300 text-lg text-center max-w-2xl mx-auto mb-12">
-              Here are some things I have worked on.
+              Here are some things I've worked on.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

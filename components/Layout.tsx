@@ -28,7 +28,6 @@ export default function Layout({ children }: LayoutProps) {
 
   const navItems = [
     { path: '/', name: 'Home' },
-    { path: '/about', name: 'About' },
     { path: '/projects', name: 'Projects' },
     { path: '/contact', name: 'Contact' }
   ];
@@ -36,12 +35,12 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen flex flex-col bg-navy-900 w-full overflow-x-hidden">
       {/* Header */}
-      <header className="bg-navy-800 shadow-lg sticky top-0 z-40">
+      <header className="bg-gradient-to-b to-navy-900 to from-blue-950 shadow-lg sticky top-0 z-40">
         <nav className="container mx-auto px-4 sm:px-6 py-3">
           <div className="flex items-center justify-between">
             {/* Logo/Name - Left side */}
             <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200">
-              <div className="relative h-15 w-15">
+              <div className="relative h-20 w-20">
                 <Image
                   src="/images/jrlogo.png"
                   alt="Joel Reiter Logo"
@@ -57,7 +56,7 @@ export default function Layout({ children }: LayoutProps) {
                 <Link 
                   key={item.path}
                   href={item.path} 
-                  className="text-navy-200 hover:text-blue-400 px-2 py-1 rounded-md text-sm font-medium transition-colors duration-300 relative group"
+                  className="text-navy-200 hover:text-blue-400 px-2 py-1 rounded-md text-md font-medium transition-colors duration-300 relative group"
                 >
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
@@ -86,11 +85,11 @@ export default function Layout({ children }: LayoutProps) {
       </header>
 
       {/* Mobile Sidebar Navigation */}
-      <div className={`mobile-menu-container fixed inset-0 z-30 transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}>
+      <div className={`mobile-menu-container fixed inset-0 z-50 transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}>
         {/* Overlay */}
         {isMenuOpen && (
           <div 
-            className="fixed inset-0 bg-black bg-opacity-50"
+            className="fixed inset-0 bg-black opacity-45"
             onClick={toggleMenu}
           ></div>
         )}
@@ -98,14 +97,6 @@ export default function Layout({ children }: LayoutProps) {
         {/* Sidebar */}
         <div className="relative w-64 h-full bg-navy-800 shadow-xl">
           <div className="p-6">
-            <Link 
-              href="/" 
-              className="text-2xl font-bold text-white block mb-8"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Joel Reiter
-            </Link>
-            
             <nav className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <Link
@@ -122,7 +113,7 @@ export default function Layout({ children }: LayoutProps) {
             {/* Social Links in Mobile Menu */}
             <div className="absolute bottom-6 left-6 flex space-x-4">
               <Link 
-                href="https://www.linkedin.com/in/joel-r-0251b9142/" 
+                href="https://www.linkedin.com/in/joel-reiter/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-navy-200 hover:text-blue-400 transition-colors duration-300"
@@ -156,7 +147,7 @@ export default function Layout({ children }: LayoutProps) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-navy-800 text-navy-200 py-8 relative z-10">
+      <footer className="bg-navy-900 text-navy-200 py-8 relative z-10">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             {/* Copyright */}
@@ -167,7 +158,7 @@ export default function Layout({ children }: LayoutProps) {
             {/* Social Links */}
             <div className="flex space-x-6">
               <Link 
-                href="https://www.linkedin.com/in/joel-r-0251b9142/" 
+                href="https://www.linkedin.com/in/joel-reiter/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-navy-200 hover:text-blue-400 transition-colors duration-300"
