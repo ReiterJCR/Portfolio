@@ -8,7 +8,6 @@ const StarField = () => {
 
     // Create stars
     const createStars = (count: number, size: number, opacity: number, duration: string) => {
-      const stars = [];
       const container = containerRef.current!;
       const containerWidth = container.offsetWidth;
       const containerHeight = container.offsetHeight;
