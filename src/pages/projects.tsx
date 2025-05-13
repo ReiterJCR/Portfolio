@@ -2,53 +2,79 @@ import Layout from '../../components/Layout';
 import Link from 'next/link';
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { FiExternalLink, FiDownload } from 'react-icons/fi';
+
 
 const Projects: NextPage = () => {
+
+
   const projects = [
     {
-        title: "Portfolio",
-        description: "This website was built using React and Next.js. Deployed on Vercel.",
-        tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel", "Personal"],
-        link: "https://joelreiter.com/"
+      title: "Portfolio",
+      description: "A performant personal portfolio website showcasing my skills and projects. Built with modern web technologies for optimal user experience.",
+      tags: ["React", "Next.js", "TypeScript", "Vercel", "Tailwind CSS"],
+      link: "https://joelreiter.com/",
+      category: "Personal"
     },
     {
       title: "RTDrones",
       description: "A mock website for a drone business. Built with Next.js and Supabase. Deployed on Vercel.",
-      tags: ["React", "TypeScript", "Next.js", "Vercel", "Supabase", "Personal"],
-      link: "https://rt-drones.vercel.app/"
+      tags: ["React", "Next.js", "Supabase", "Vercel", "Tailwind CSS"],
+      link: "https://rt-drones.vercel.app/",
+      category: "Demo"
     },
     {
       title: "HERO",
       description: "Health and Environmental Research Online (HERO) is a database of scientific studies and other references used to develop EPA's risk assessments aimed at understanding the health and environmental effects of pollutants and chemicals.",
       tags: ["Python", "Django", "PostgreSQL", "CSS", "HTML", "JavaScript", "Agile Development", "Jira", "Team"],
-      link:"https://heronetnext.epa.gov/"
+      link:"https://heronetnext.epa.gov/",
+      category: "Professional"
     },
   ];
 
   return (
     <>
       <Head>
-        <title>Projects | Joel Reiter</title>
-        <meta name="description" content="Projects by Joel Reiter, Software Engineer" />
+        <title>Projects | Joel Reiter - Software Engineer</title>
+        <meta name="description" content="Selected projects by Joel Reiter showcasing professional and personal software development work" />
       </Head>
       
       <Layout>
         <section className="min-h-screen bg-navy-900 py-20 px-6">
           <div className="container mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-4">Projects</h2>
-            <p className="text-navy-300 text-lg text-center max-w-2xl mx-auto mb-12">
-              Here are some things I've worked on.
-            </p>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">My Projects</h2>
+              <p className="text-navy-300 text-lg max-w-2xl mx-auto">
+                A selection of my professional, personal, and demonstration projects
+              </p>
+              <a
+                href="/Resume.pdf"
+                download="Joel_Reiter_Resume.pdf"
+                className="mt-6 flex items-center justify-center gap-2 max-w-fit mx-auto bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 rounded-lg transition-colors duration-300 hover:cursor-pointer"
+              >
+                Get My Resume <FiDownload className="text-sm" />
+              </a>
+            </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
                 <div 
                   key={index}
-                  className="bg-navy-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 hover:transform hover:-translate-y-2 transition-transform duration-300"
+                  className="bg-navy-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col"
                 >
-                  <div className="p-6">
-                    <h3 className="text-2xl font-semibold text-white mb-3">{project.title}</h3>
-                    <p className="text-navy-300 mb-4">{project.description}</p>
+                  <div className="p-6 flex-grow">
+                    <div className="flex justify-between items-start mb-4">
+                      <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
+                      <span className={`text-xs px-2 py-1 rounded-full ${
+                        project.category === "Professional" ? "bg-green-900 text-green-300" :
+                        project.category === "Personal" ? "bg-blue-900 text-blue-300" :
+                        "bg-purple-900 text-purple-300"
+                      }`}>
+                        {project.category}
+                      </span>
+                    </div>
+                    
+                    <p className="text-navy-300 mb-6">{project.description}</p>
                     
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.tags.map((tag, tagIndex) => (
@@ -60,16 +86,20 @@ const Projects: NextPage = () => {
                         </span>
                       ))}
                     </div>
-                    {project.link && (
-                        <Link
-                           href={project.link}
-                           className="inline-block w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-300"
-                        >
-                            View Project
-                        </Link>
-                    )}
-                    
                   </div>
+                  
+                  {project.link && (
+                    <div className="p-4 bg-navy-850 border-navy-700">
+                      <Link
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2 w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-300"
+                      >
+                        View Project <FiExternalLink className="text-sm" />
+                      </Link>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

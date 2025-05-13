@@ -168,7 +168,7 @@ const Home: NextPage = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-4 mt-12">
               <Link
                 href="/projects"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition-all duration-300 text-lg font-medium"
+                className="bg-blue-800 hover:bg-blue-700 text-white px-8 py-4 rounded-lg transition-all duration-300 text-lg font-medium"
               >
                 View My Work
               </Link>
