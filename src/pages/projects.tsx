@@ -30,6 +30,13 @@ const Projects: NextPage = () => {
       link:"https://heronetnext.epa.gov/",
       category: "Professional"
     },
+    {
+        title: "RAG Chatbot for NASCAR pitstop data",
+        description: "A Retrieval-Augmented Generation (RAG) chatbot that provides insights on NASCAR pitstop data using OpenAI.",
+        tags: ["Python", "OpenAI", "Flask", "SQLite", "HTML", "CSS", "JavaScript"],
+        link: "https://github.com/reiterjcr/asphalt-rag",
+        category: "Personal"
+    }
   ];
 
   return (

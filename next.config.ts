@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Static output for S3
   images: {
     unoptimized: true, // Required for static export
   },
