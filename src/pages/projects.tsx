@@ -36,6 +36,13 @@ const Projects: NextPage = () => {
         tags: ["Python", "OpenAI", "Flask", "SQLite", "HTML", "CSS", "JavaScript"],
         link: "https://github.com/reiterjcr/asphalt-rag",
         category: "Personal"
+    },
+    {
+        title: "Access Sentinel",
+        description: "A simulated insider threat detection web application that monitors employee data access and flags potentially suspicious activity based on patterns like IP geolocation anomalies, access spikes, and after-hours usage.",
+        tags: ["Python", "Django", "PostgreSQL", "HTML", "CSS", "JavaScript"],
+        link: "https://github.com/reiterjcr/access-sentinel",
+        category: "Personal"
     }
   ];
 
